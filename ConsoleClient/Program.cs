@@ -30,17 +30,17 @@ public partial class Program
         //Subtract
         endpoint = "/api/Calculator/Subtract";
         response = restService.Post<CalculatorDTO, int>(endpoint, calculator).Result;
-        Console.WriteLine($"Add({calculator.Start},{calculator.End})={response}");
+        Console.WriteLine($"Subtract({calculator.Start},{calculator.End})={response}");
 
         //Multiply
         endpoint = "/api/Calculator/Multiply";
         response = restService.Post<CalculatorDTO, int>(endpoint, calculator).Result;
-        Console.WriteLine($"Add({calculator.Start},{calculator.End})={response}");
+        Console.WriteLine($"Multiply({calculator.Start},{calculator.End})={response}");
 
         //Divide
         endpoint = "/api/Calculator/Divide";
         response = restService.Post<CalculatorDTO, int>(endpoint, calculator).Result;
-        Console.WriteLine($"Add({calculator.Start},{calculator.End})={response}");
+        Console.WriteLine($"Divide({calculator.Start},{calculator.End})={response}");
 
         Console.WriteLine("Press any key to exit.");
         
